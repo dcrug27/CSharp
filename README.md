@@ -8,3 +8,5 @@
 Нахождение максимального числа из 3-ёх чисел -> [Блок-схема](Homework01/Ex01/diagram.drawio.png) [Код](Homework01/Ex01/Program.cs)
 
 Нахождение чётного числа -> [Блок-схема](Homework01/Ex02/diagram.drawio.png) [Код](Homework01/Ex02/Program.cs)
+
+Нахождение чётных чисел от 1 до N -> [Блок-схема](Homework01/Ex03/diagram.drawio.png) [Код](Homework01/Ex03/Program.cs)
