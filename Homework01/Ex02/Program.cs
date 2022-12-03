@@ -4,9 +4,9 @@ int number = 0;
 
 if (number % 2 == 0)
 {
-    Console.WriteLine("Число четное");
+    Console.WriteLine("Число чётное");
 }
 else
 {
-    Console.WriteLine("Число нечетное");
+    Console.WriteLine("Число нечётное");
 }
