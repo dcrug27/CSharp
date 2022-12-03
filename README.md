@@ -6,3 +6,5 @@
 # Домашние работы
 ## Домашняя работа №1
 Нахождение максимального числа из 3-ёх чисел -> [Блок-схема](Homework01/Ex01/diagram.drawio.png) [Код](Homework01/Ex01/Program.cs)
+
+Нахождение чётного числа -> [Блок-схема](Homework01/Ex02/diagram.drawio.png) [Код](Homework01/Ex02/Program.cs)
