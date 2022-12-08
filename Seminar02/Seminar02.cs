@@ -18,10 +18,4 @@ public static class Seminar02
         Console.WriteLine(PrintArray(arr));
         Console.WriteLine(Counter(arr, 10, 99));
     }
-
-   public static void Ex39()
-   {
-    //39. Найти произведение пар чисел в одномерном массиве. Парой считаем первый и последний элемент, второй и предпоследний и т.д.
-    
-   } 
 }
