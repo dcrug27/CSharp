@@ -12,3 +12,5 @@
 Нахождение чётного числа -> [Блок-схема](Homework01/Ex02/diagram.drawio.png) [Код](Homework01/Ex02/Program.cs)
 
 Нахождение чётных чисел от 1 до N -> [Блок-схема](Homework01/Ex03/diagram.drawio.png) [Код](Homework01/Ex03/Program.cs)
+## Домашняя работа №2
+Нахождение максимального числа из 3-ёх чисел -> [Код](Homework02/Ex01/Program.cs)
