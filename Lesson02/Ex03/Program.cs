@@ -9,7 +9,7 @@ while (index < n)
 {
     if (array[index] == find)
     {
-        System.Console.WriteLine(index);
+        Console.WriteLine(index);
         break;
     }
     index++;
