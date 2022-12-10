@@ -25,7 +25,7 @@ void Method2_1(string msg, int count)
 Method2_1("Text message", 4); // Method2_1(msg: "text", count: 4) - Можно так.
 
 //Вид 3
-int Method3();
+int Method3()
 {
     return DateTime.Now.Year;
 }
@@ -33,7 +33,7 @@ int year = Method3();
 Console.WriteLine(year);
 
 //Вид 4
-string Method4(int count, char text);
+string Method4(int count, char text)
 {
     int i = 0;
     string result = String.Empty;
@@ -44,14 +44,13 @@ string Method4(int count, char text);
     }
     return result;
 }
-string res = Method4(10, "qwerty");
+string res = Method4(10, 'q');
 Console.WriteLine(res);
 
 //Вид 4.1
 
-string Method4_1(int count, char text);
+string Method4_1(int count, char text)
 {
-    int i = 0;
     string result = String.Empty;
     for (int i = 0; i < count; i++)
     {
@@ -59,5 +58,5 @@ string Method4_1(int count, char text);
     }
     return result;
 }
-string res = Method4_1(10, "qwerty");
+string res1 = Method4_1(10, 'q');
 Console.WriteLine(res);
