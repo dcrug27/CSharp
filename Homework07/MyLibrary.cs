@@ -1,0 +1,182 @@
+public static class MyLibrary
+{
+    public static int Input(string text)
+    {
+        Console.Write(text);
+        return Convert.ToInt32(Console.ReadLine());
+    }
+
+    public static int[] CreateArray(int count)
+    {
+        return new int[count];
+    }
+
+    public static void FillArray(int[] array, int min, int max)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = new Random().Next(min, max);
+        }
+    }
+
+    public static string PrintArray(int[] array)
+    {
+        string output = string.Empty;
+        for (int i = 0; i < array.Length; i++)
+        {
+            output += $"{array[i],3} ";
+        }
+        return output;
+    }
+
+    public static int Even(int[] array)
+    {
+        int count = 0;
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] % 2 == 0)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static int Sum(int[] array)
+    {
+        int sum = 0;
+        for (int i = 1; i < array.Length; i += 2)
+        {
+            sum += array[i];
+        }
+        return sum;
+    }
+
+    public static double Diff(double[] array)
+    {
+        double max = array.Max();
+        double min = array.Min();
+        double dif = max - min;
+        return dif;
+    }
+
+    public static double[] CreateArrayDouble(int count)
+    {
+        return new double[count];
+    }
+
+    public static void FillArrayDouble(double[] array, int min, int max)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = new Random().Next(min, max) + new Random().NextDouble();
+        }
+    }
+
+    public static string PrintArrayDouble(double[] array)
+    {
+        string output = string.Empty;
+        for (int i = 0; i < array.Length; i++)
+        {
+            output += $"{array[i],3} ";
+        }
+        return output;
+    }
+
+    public static void FillArrayHand(int[] array)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = Input($"Введите {i} число массива: ");
+        }
+    }
+
+    public static int HowNumbersMoreZero(int[] array)
+    {
+        int count = 0;
+        for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i] > 0)
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static double Intersection(double b1, double k1, double b2, double k2)
+    {
+        double x = (b2 - b1) / (k1 - k2);
+        return x;
+    }
+
+    public static double[,] Create2ArrayDouble(int a, int b)
+    {
+        return new double[a, b];
+    }
+
+    public static void Print2ArrayDouble(double[,] matr)
+    {
+        for (int i = 0; i < matr.GetLength(0); i++)
+        {
+            for (int j = 0; j < matr.GetLength(1); j++)
+            {
+                System.Console.Write($"{matr[i, j]} ");
+            }
+            System.Console.WriteLine();
+        }
+    }
+
+    public static void Fill2ArrayDouble(double[,] matr)
+    {
+        for (int i = 0; i < matr.GetLength(0); i++)
+        {
+            for (int j = 0; j < matr.GetLength(1); j++)
+            {
+                matr[i, j] = new Random().Next(-10, 10) + new Random().NextDouble();
+            }
+        }
+    }
+
+    public static int[,] Create2Array(int a, int b)
+    {
+        return new int[a, b];
+    }
+
+    public static void Print2Array(int[,] matr)
+    {
+        for (int i = 0; i < matr.GetLength(0); i++)
+        {
+            for (int j = 0; j < matr.GetLength(1); j++)
+            {
+                System.Console.Write($"{matr[i, j]} ");
+            }
+            System.Console.WriteLine();
+        }
+    }
+
+    public static void Fill2Array(int[,] matr)
+    {
+        for (int i = 0; i < matr.GetLength(0); i++)
+        {
+            for (int j = 0; j < matr.GetLength(1); j++)
+            {
+                matr[i, j] = new Random().Next(0, 100);
+            }
+        }
+    }
+
+    public static void Mean(int [,] arr)
+    {
+        for (int j = 0; j < arr.GetLength(1); j++)
+        {
+            double sum = 0;
+            for (int i = 0; i < arr.GetLength(0); i++)
+            {
+                sum += arr[i, j];
+            }
+            Console.Write($"{Math.Round(sum / arr.GetLength(0), 1)} ");
+        }
+    }
+
+}
